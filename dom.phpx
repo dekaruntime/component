@@ -56,6 +56,14 @@ export function render($node) {
     return renderToString($node);
 }
 
+/// docid: phpx/component/renderToStringAsync()
+/// <Function name="renderToStringAsync">
+///   <Description>PHPX standard module function `renderToStringAsync` from `component`.</Description>
+///   <Parameter name="$node" type="mixed" required="true">
+///     Parameter $node.
+///   </Parameter>
+///   <ReturnType type="mixed" />
+/// </Function>
 export function renderToStringAsync($node) {
     // Runtime currently executes synchronously here; keep async alias for compatibility.
     return renderToString($node)
@@ -575,6 +583,14 @@ export function isPartialRequest() {
 }
 
 
+/// docid: phpx/component/handleServerIslandRequestAsync()
+/// <Function name="handleServerIslandRequestAsync">
+///   <Description>PHPX standard module function `handleServerIslandRequestAsync` from `component`.</Description>
+///   <Parameter name="$registry" type="mixed" required="false">
+///     Parameter $registry.
+///   </Parameter>
+///   <ReturnType type="mixed" />
+/// </Function>
 export function handleServerIslandRequestAsync($registry = false) {
     // Keep async alias for compatibility while current runtime path remains sync.
     return handleServerIslandRequest($registry)
